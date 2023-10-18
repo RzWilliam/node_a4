@@ -14,6 +14,9 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
+const helmet = require("helmet");
+app.use(helmet());
+
 const cors = require("cors");
 app.use(cors());
 

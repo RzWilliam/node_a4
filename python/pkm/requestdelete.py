@@ -1,6 +1,6 @@
 import requests
 
-url = 'http://localhost:3000/pkm/652d076a056713188d5bcc3f'
-headers= {'x-auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MmQyYWMxNGQwMzQ3ZWM5YmQyNWQwZiIsIm1haWwiOiJ3aWxsaWFtQGdtYWlsLmNvbSIsImlhdCI6MTY5NzQ1OTgzMCwiZXhwIjoxNjk3NDgxNDMwfQ.-NpWfRMRXU59rhDtZ87ZLee4NINZv12n3tUcgj5o0fI'}
+url = 'http://localhost:3000/pkm/652e4811e6e96ade6fffa4d9'
+headers= {'x-auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MmY4YTQ0YmJkZTQ5OGI4MWI5MDRhZiIsIm1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY5NzYxNDQzMCwiZXhwIjoxNjk3NjM2MDMwfQ.GAoeasxpp1W2tBQ8jXyYB87P5t_mjEFIJYylMo3GXNM'}
 r = requests.delete(url, headers=headers)
 print(r.text)
