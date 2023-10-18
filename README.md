@@ -66,3 +66,11 @@ J'ai intégré `rate-limiter` pour limiter le nombre de requêtes qu'un utilisat
 ```bash
 npm install express-rate-limit
 ```
+
+### Dotenv
+
+J'ai ajouté dotenv pour gérer les variables d'environnement de l'application. Cela permet de stocker des informations sensibles (comme les clés d'API) de manière sécurisée et de les charger facilement dans l'application. Voici comment l'installer :
+
+```bash
+npm install dotenv
+```
