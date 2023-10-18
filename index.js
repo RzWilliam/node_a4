@@ -2,13 +2,13 @@ const express = require("express");
 const pkmRouter = require("./router/PkmRouter");
 const userRouter = require("./router/UserRouter");
 const cookieParser = require("cookie-parser");
+require('dotenv').config()
 const app = express();
 const port = 3000;
-
 const mongoose = require("mongoose");
 mongoose
   .connect(
-    "mongodb+srv://william:Pwnv5KgUgWWETCjP@cluster0.fxk6gaf.mongodb.net/?retryWrites=true&w=majority",
+    process.env.MONGODB_URI,
     { useNewUrlParser: true }
   )
   .then(() => console.log("MongoDB connected"))
