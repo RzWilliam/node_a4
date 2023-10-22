@@ -59,6 +59,14 @@ J'ai également inclus `PM2`, un gestionnaire de processus pour Node.js. `PM2` f
 npm install pm2
 ```
 
+Dans ce projet, les commandes associés à pm2, sont : 
+```bash
+npm start
+npm run logs
+npm run stop
+npm run monit
+```
+
 ### Rate-limiter
 
 J'ai intégré `rate-limiter` pour limiter le nombre de requêtes qu'un utilisateur peut effectuer sur certaines routes. Cela aide à prévenir les abus et à maintenir la stabilité du serveur. Voici comment l'installer :
@@ -67,6 +75,8 @@ J'ai intégré `rate-limiter` pour limiter le nombre de requêtes qu'un utilisat
 npm install express-rate-limit
 ```
 
+Dans ce projet, la librairie est utilisé afin de limité la création de Pokemon et de User ainsi que les tentatives de connexion à 20 toutes les 2 minutes
+
 ### Dotenv
 
 J'ai ajouté dotenv pour gérer les variables d'environnement de l'application. Cela permet de stocker des informations sensibles (comme les clés d'API) de manière sécurisée et de les charger facilement dans l'application. Voici comment l'installer :
@@ -74,3 +84,5 @@ J'ai ajouté dotenv pour gérer les variables d'environnement de l'application. 
 ```bash
 npm install dotenv
 ```
+
+Dans ce projet, j'utilise la librairie afin de récupérer l'URL de ma base données dans mon .env via `process.env.MONGODB_URI` 
